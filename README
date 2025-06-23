@@ -369,18 +369,3 @@ The following steps can be used to validate the EDAC/GHES on cn10xxx:
 Below is an output example:
     EDAC octeontx: Inject: CPU14: (0xc2000b10, 0xd, 0x2ffff0000, 0x1, 0x1) 0x0
     EDAC MC0: 1 CE DMC1,R0,BG2 on any memory ( page:0x2ffff offset:0x0 grain:1 syndrome:0xa5a5a5a4 - rank:0 bank:3 row:32767 column:336 bit_position:0 single-bit ECC )
-
-10. Build kernel based on SDK12 v6.1
-====================================
-
-Method 1:
-
-    Add "--templates marvell-base61" to the setup.sh parameters.
-    Example:
-        setup.sh --machines marvell-cn10xxx --templates marvell-base61
-
-Method 2:
-
-    If you opt not to use wrtemplate, you can also activate the kernel
-    based on SDK12 v6.1 by adding the following statement to local.conf.
-        ENABLE_MARVELL_BASE61 = "1"
