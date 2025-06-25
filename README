@@ -132,7 +132,7 @@ baudrate=115200
 ============
 Please refer to the Yocto manual for the detailed info about WIC. After building
 the project, the WIC image is at:
-   tmp/deploy/images/marvell-cn10xxx/wrlinux-image-std-<machine name>.wic
+   tmp/deploy/images/marvell-cn10xxx/wrlinux-image-std-<machine name>.rootfs.wic
 
 Then user can burn this image to eMMC on board.
 
