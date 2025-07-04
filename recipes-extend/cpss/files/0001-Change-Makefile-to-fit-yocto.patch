@@ -6,6 +6,8 @@ Subject: [PATCH 1/2] Change Makefile to fit yocto
 The makefile contains some LD parameters that have expired. We need to
 change them to adapt to the current compilation environment
 
+Upstream-Status: Inappropriate [proprietary]
+
 Signed-off-by: Ruiqiang Hao <Ruiqiang.Hao@windriver.com>
 ---
  Makefile | 7 ++++---

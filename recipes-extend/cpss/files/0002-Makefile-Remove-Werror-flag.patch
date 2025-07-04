@@ -7,6 +7,8 @@ Since the GCC version included in linux yocto is newer than sdk11, too
 many warnings will be regarded as errors, remove the [-Werror] flag to
 ensure that CPSS can be built pass in the current environment.
 
+Upstream-Status: Inappropriate [proprietary]
+
 Signed-off-by: Ruiqiang Hao <Ruiqiang.Hao@windriver.com>
 ---
  Makefile | 2 +-
