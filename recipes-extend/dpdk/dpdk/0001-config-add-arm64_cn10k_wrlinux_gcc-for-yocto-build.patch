@@ -1,0 +1,37 @@
+From 7b2b8bcb12b82c4646ae4fdaf9fce894f4e43459 Mon Sep 17 00:00:00 2001
+From: Ruiqiang Hao <Ruiqiang.Hao@windriver.com>
+Date: Thu, 11 Sep 2025 13:12:02 +0000
+Subject: [PATCH] config: add arm64_cn10k_wrlinux_gcc for Yocto build
+
+Add a new DPDK config file "arm64_cn10k_wrlinux_gcc" to support building
+on Yocto with WRLinux toolchain.
+
+Upstream-Status: Inappropriate
+
+Signed-off-by: Ruiqiang Hao <Ruiqiang.Hao@windriver.com>
+---
+ config/arm/arm64_cn10k_wrlinux_gcc | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 config/arm/arm64_cn10k_wrlinux_gcc
+
+diff --git a/config/arm/arm64_cn10k_wrlinux_gcc b/config/arm/arm64_cn10k_wrlinux_gcc
+new file mode 100644
+index 0000000000..2aaf71f555
+--- /dev/null
++++ b/config/arm/arm64_cn10k_wrlinux_gcc
+@@ -0,0 +1,12 @@
++[binaries]
++pcap-config = ''
++cmake = 'cmake'
++
++[host_machine]
++system = 'linux'
++cpu_family = 'aarch64'
++cpu = 'armv8-a'
++endian = 'little'
++
++[properties]
++platform = 'cn10k'
+-- 
+2.44.3
+
