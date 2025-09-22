@@ -369,3 +369,8 @@ The following steps can be used to validate the EDAC/GHES on cn10xxx:
 Below is an output example:
     EDAC octeontx: Inject: CPU14: (0xc2000b10, 0xd, 0x2ffff0000, 0x1, 0x1) 0x0
     EDAC MC0: 1 CE DMC1,R0,BG2 on any memory ( page:0x2ffff offset:0x0 grain:1 syndrome:0xa5a5a5a4 - rank:0 bank:3 row:32767 column:336 bit_position:0 single-bit ECC )
+
+10. DPDK
+========
+
+Refer to the README file in dpdk feature directory(layers/wrlinux/templates/feature/dpdk).
