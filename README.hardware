@@ -80,8 +80,8 @@ The following BSP features are validated and supported.
 
 	o Bus
 		+ PCIe
-			+ 1 PCIe Gen3 x4
-			+ 2 PCIe Gen3 x1
+			+ 1 PCIe Gen4 x4
+			+ 1 PCIe Gen4 x2
 		+ USB
 			+ 1 USB2.0 Controller
 		+ I2C
